@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: black;
+}
+
+body {
+  background: var(--background);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.background_img {
+  background-image: url("/images/main-screen__bgc.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* header styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.main-navigation_items {
+  display: flex;
+  gap: 20px;
+}
+
+.main-navigation_item {
+  list-style: none;
+}
+
+.main-navigation_item a {
+  text-decoration: none;
+  color: #118DA8;
+}
+
+.header-btn {
+  padding: 8px 20px;
+  background: linear-gradient(to right, #c89afc 9.51%, #7c6afa 90.23%);
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background-position: right center;
+}
+
+/* Home styles */
+.home {
+  padding: 130px 0;
+}
+
+.home-section_title {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.home-section_button {
+  margin-top: 15px;
+}
+
+.home-section_button button {
+  background: #121212;
+  color: white;
+  padding: 0.7rem;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.home-section_button button h4 {
+  font-size: 18px;
+}
+
+.home-section_button button span {
+  opacity: 0.4;
+}
+
+.home-section_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 50px; */
+  height: 12%;
+  margin-top: 89px;
+  background: #121212;
+}
+
+.home-section_info button {
+  background: linear-gradient(to right, #df5950 11.19%, #451046 93.72%);
+  background-size: 200% auto;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.home-section_info button:hover,
+.home-section_info button:focus {
+  background-position: right center;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin: 5px 0;
+  background: white;
+}
+
+.line-blue {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 4px;
+}
+
+.home-section_info div span:nth-child(1) {
+  opacity: 0.5;
+}
+
+.home-section_content {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+
+/* About me styles */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.about-me_img img {
+  width: 380px;
+}
+
+.about-me_info {
+  width: 50%;
+}
+
+.about-me_info h2 {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.about-me_info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*  */
+.start-img {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.5;
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  padding: 80px 0;
+}
+
+.card-body h4 {
+  font-size: 25px;
+  margin-top: -20px;
+}
+
+.card-body_line_1,
+.card-body_line_2,
+.card-body_line_3,
+.card-body_line_4 {
+  background: linear-gradient(90deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+
+.card-body_line_1 {
+  width: 324px;
+  height: 60px;
+}
+
+.card-body_line_2 {
+  width: 324px;
+  height: 40px;
+  margin-top: 10px;
+}
+.card-body_line_3 {
+  width: 324px;
+  height: 20px;
+  margin-top: 20px;
+}
+.card-body_line_4 {
+  width: 220px;
+  height: 10px;
+  margin-top: 25px;
+}
+
+.card-body p {
+  margin-top: 30px;
+}
+
+/*  */
+.main {
+  text-align: center;
+}
+
+.main-card {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-card_body {
+  width: 250px;
+  height: 200px;
+}
+
+.main-card_body p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/*  */
+.main-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+.main-info_content {
+  text-align: center;
+}
+
+.main-info_img img {
+  margin: 0 20px;
+}
+
+/* prograam styles */
+
+.img{
+  text-align: center;
+}
+
+/* teachers */
+.teachers-title img{
+  transform: rotate(-223deg);
+}
+
+.teachers-title h1{
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.teachers-title{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
+}
+
+.card{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.card1 button{
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+/* footer styles */
+
+.footer-title{
+  text-align: center;
+}
+.footer-title h1{
+  font-weight: 500;
+}
+.footer-title h6{
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.footers-button{
+  position: relative;
+  text-align: center;
+  margin-right: 390px;
+}
+
+.footers-button input{
+  border-radius: 50px;
+  padding: 10px 30px;
+  position: absolute;
+  width: 300px;
+}
+
+.footers-button button{
+  border-radius: 50px;
+  padding: 10px 30px;
+  position: absolute;
+  margin-left: 270px;
+}
+
+.footers-icon{
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px
+  ;
+}
